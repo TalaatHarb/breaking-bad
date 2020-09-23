@@ -1,0 +1,5 @@
+<section class='search'>
+  <form name="search-form">
+    <input type='text' name="search-input" class='form-control' placeholder='Search characters' [ngModel]="text" (ngModelChange)="filter($event)" autoFocus />
+  </form>
+</section>

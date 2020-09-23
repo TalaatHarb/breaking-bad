@@ -1,0 +1,4 @@
+<bbchars-char-loading *ngIf="isLoading"></bbchars-char-loading>
+<section *ngIf="!isLoading" class="cards">
+  <bbchars-char-card *ngFor="let character of characters" [character]="character"></bbchars-char-card>
+</section>

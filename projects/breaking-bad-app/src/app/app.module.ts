@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CastPageComponent } from './pages/cast-page/cast-page.component';
 import { HeaderComponent } from './components/header/header.component';
+import { BreakingBadCharsModule } from 'projects/breaking-bad-chars/src/public-api';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BreakingBadCharsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
