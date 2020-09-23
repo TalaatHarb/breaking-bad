@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "breaking-bad-chars": {
+      "projectType": "library",
+      "root": "projects/breaking-bad-chars",
+      "sourceRoot": "projects/breaking-bad-chars/src",
+      "prefix": "bbchars",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/breaking-bad-chars/tsconfig.lib.json",
+            "project": "projects/breaking-bad-chars/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/breaking-bad-chars/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/breaking-bad-chars/src/test.ts",
+            "tsConfig": "projects/breaking-bad-chars/tsconfig.spec.json",
+            "karmaConfig": "projects/breaking-bad-chars/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/breaking-bad-chars/tsconfig.lib.json",
+              "projects/breaking-bad-chars/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "breaking-bad-app"
 }
