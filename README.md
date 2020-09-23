@@ -1,6 +1,8 @@
 # BreakingBad
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
+It is inspired by this video [React App - Breaking Bad API](https://www.youtube.com/watch?v=YaioUnMw0mo) 
+and its code repository: [breaking-bad-cast](https://github.com/bradtraversy/breaking-bad-cast)
 
 ## Development server
 
