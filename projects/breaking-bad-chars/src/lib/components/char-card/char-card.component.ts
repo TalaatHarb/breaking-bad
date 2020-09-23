@@ -8,7 +8,7 @@ import { Character } from '../../models/character.model';
 })
 export class CharCardComponent implements OnInit {
 
-  @Input() character: Character;
+  @Input() character: Character = {char_id: 0, name: ''};
 
   constructor() { }
 

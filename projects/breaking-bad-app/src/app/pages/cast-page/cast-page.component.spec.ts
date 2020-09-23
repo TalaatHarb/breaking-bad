@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BreakingBadCharsModule } from 'breaking-bad-chars';
+import { MockModule } from 'ng-mocks';
 
 import { CastPageComponent } from './cast-page.component';
 
@@ -8,7 +10,8 @@ describe('CastPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CastPageComponent ]
+      declarations: [ CastPageComponent ],
+      imports: [MockModule(BreakingBadCharsModule)]
     })
     .compileComponents();
   });
