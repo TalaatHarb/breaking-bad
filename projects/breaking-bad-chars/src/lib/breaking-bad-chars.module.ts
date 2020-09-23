@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BreakingBadCharsComponent } from './breaking-bad-chars.component';
 
 
 
 @NgModule({
-  declarations: [BreakingBadCharsComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [BreakingBadCharsComponent]
+  exports: []
 })
 export class BreakingBadCharsModule { }
