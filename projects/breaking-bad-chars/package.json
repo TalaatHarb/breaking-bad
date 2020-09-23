@@ -1,6 +1,17 @@
 {
   "name": "breaking-bad-chars",
   "version": "0.0.1",
+  "schematics": "./schematics/collection.json",
+  "scripts": {
+    "build": "ng build --prod",
+    "build:schematics": "tsc -p tsconfig.schematics.json",
+    "copy:collection": "cp ./schematics/collection.json ../../dist/breaking-bad-chars/schematics/collection.json",
+    "postbuild": "npm run build:schematics && npm run copy:collection"
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
   "peerDependencies": {
     "@angular/common": "^10.1.2",
     "@angular/core": "^10.1.2"

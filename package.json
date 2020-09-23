@@ -5,7 +5,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:chars-lib": "ng build --prod --project=breaking-bad-chars && tsc -p projects/breaking-bad-chars/tsconfig.schematics.json && cp projects/breaking-bad-chars/schematics/collection.json ./dist/breaking-bad-chars/schematics/collection.json",
+    "build:app": "ng build --project=breaking-bad-app",
+    "build:app:prod": "ng build --prod --project=breaking-bad-app",
     "test": "ng test",
+    "test:chars-lib": "ng test --project=breaking-bad-chars",
+    "test:app": "ng test --project=breaking-bad-chars",
+    "watch:chars-lib": "ng build --prod --project=breaking-bad-chars --watch",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -41,6 +47,7 @@
     "ng-mocks": "^10.1.3",
     "ng-packagr": "^10.1.0",
     "protractor": "~7.0.0",
+    "schematics-utilities": "^2.0.2",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"

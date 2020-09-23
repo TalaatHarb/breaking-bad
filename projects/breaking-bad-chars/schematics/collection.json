@@ -1,0 +1,9 @@
+{
+  "$schema": "../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Installs breaking-bad-chars and its dependencies",
+      "factory": "./ng-add/index#addChars"
+    }
+  }
+}
