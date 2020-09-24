@@ -1,6 +1,6 @@
 {
   "name": "breaking-bad-chars",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "schematics": "./schematics/collection.json",
   "scripts": {
     "build": "ng build --prod",
@@ -12,11 +12,12 @@
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"
   },
-  "peerDependencies": {
-    "@angular/common": "^10.1.2",
-    "@angular/core": "^10.1.2"
-  },
   "dependencies": {
     "tslib": "^2.0.0"
+  },
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TalaatHarb/breaking-bad"
   }
 }
