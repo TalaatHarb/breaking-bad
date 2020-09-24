@@ -1,6 +1,6 @@
 {
   "name": "breaking-bad-chars",
-  "version": "0.0.8",
+  "version": "0.0.1",
   "schematics": "./schematics/collection.json",
   "scripts": {
     "build": "ng build --prod",
@@ -19,5 +19,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/TalaatHarb/breaking-bad"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
   }
 }

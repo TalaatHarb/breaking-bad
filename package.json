@@ -56,5 +56,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/TalaatHarb/breaking-bad"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
   }
 }
