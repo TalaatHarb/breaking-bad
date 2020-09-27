@@ -9,8 +9,8 @@
     "postbuild": "npm run build:schematics && npm run copy:collection"
   },
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/common": "^10.1.2",
+    "@angular/core": "^10.1.2"
   },
   "dependencies": {
     "tslib": "^2.0.0"
