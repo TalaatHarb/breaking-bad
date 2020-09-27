@@ -9,10 +9,6 @@
     "postbuild": "npm run build:schematics && npm run copy:collection"
   },
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
-  },
-  "peerDependencies": {
     "@angular/common": "^10.1.2",
     "@angular/core": "^10.1.2"
   },
